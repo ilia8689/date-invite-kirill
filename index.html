@@ -322,15 +322,15 @@
     <div class="card" id="mainCard">
         <!-- Step 1: Main question -->
         <div class="step active" id="step1" data-step="1">
-            <span class="emoji-big">🥰</span>
-            <h1>Ты мне очень нравишься 💕</h1>
-            <p class="subtitle">Я долго думал, как сказать, но решил — просто и честно.<br>Ты невероятная, и я хочу узнать тебя ближе ✨</p>
+            <span class="emoji-big">🎂</span>
+            <h1>Твой день рождения — мой праздник 💕</h1>
+            <p class="subtitle">Я хочу сделать этот день незабываемым. Всё, что нужно — просто согласиться.<br>А остальное я беру на себя ✨</p>
             <div class="divider"></div>
             <div class="photos">
-                <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#ff9a9e,#fad0c4);display:flex;align-items:center;justify-content:center;font-size:32px;border:3px solid #ffb3c6;">💑</div>
+                <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#ff9a9e,#fad0c4);display:flex;align-items:center;justify-content:center;font-size:32px;border:3px solid #ffb3c6;">🎀</div>
             </div>
             <p style="font-size:18px;font-weight:600;color:#d6336c;margin-bottom:24px;">
-                Готова сходить со мной на свидание?
+                Позволишь мне сделать твой день рождения волшебным?
             </p>
                 <div class="answers" id="answersGroup" style="position:relative;min-height:100px;">
                     <button type="button" class="answer-btn" data-value="yes">❤️ Да!</button>
@@ -345,8 +345,8 @@
         <!-- Step 2: Date -->
         <div class="step" id="step2" data-step="2">
             <span class="emoji-big">📅</span>
-            <h1>Когда ты свободна?</h1>
-            <p class="subtitle">Выбери день, который тебе подходит 💕</p>
+            <h1>Когда твой день рождения?</h1>
+            <p class="subtitle">Напомни мне дату, чтобы я точно ничего не пропустил 🎀</p>
             <div class="divider"></div>
             <div class="form-group">
                 <input type="date" name="Дата" id="datePicker" style="cursor:pointer;text-align:center;font-size:18px;padding:16px;">
@@ -359,18 +359,20 @@
         <!-- Step 3: Place -->
         <div class="step" id="step3" data-step="3">
             <span class="emoji-big">🎯</span>
-            <h1>Куда хочешь пойти?</h1>
-            <p class="subtitle">Выбирай, я организую всё 🥰</p>
+            <h1>Как хочешь провести этот день?</h1>
+            <p class="subtitle">Выбирай настроение, а всё остальное я беру на себя 🥰</p>
             <div class="divider"></div>
             <div class="answers" id="placeGroup">
                 <button type="button" class="place-btn" data-value="Кино">🎬 Кино</button>
-                <button type="button" class="place-btn" data-value="Ресторан">🍝 Ресторан</button>
-                <button type="button" class="place-btn" data-value="Отдых в загородном доме">🏡 Отдых в загородном доме</button>
+                <button type="button" class="place-btn" data-value="Ресторан">🍝 Романтический ужин</button>
+                <button type="button" class="place-btn" data-value="Отдых в загородном доме">🏡 Загородный дом</button>
+                <button type="button" class="place-btn" data-value="Спа-салон">💆‍♀️ Спа-день</button>
+                <button type="button" class="place-btn" data-value="Прогулка на лошадях">🐴 Прогулка верхом</button>
                 <button type="button" class="place-btn" id="otherPlaceBtn">✏️ Свой вариант</button>
             </div>
             <input type="hidden" id="placeInput" value="">
             <div style="margin-top:12px;display:none;" id="otherPlaceDiv">
-                <input type="text" name="Свой вариант" id="otherPlaceInput" placeholder="Напиши куда хочешь ✨" style="width:100%;padding:14px 16px;border:2px solid #e8e8e8;border-radius:14px;font-size:15px;font-family:inherit;outline:none;background:#fafafa;box-sizing:border-box;">
+                <input type="text" name="Свой вариант" id="otherPlaceInput" placeholder="Напиши свою идею, я всё организую ✨" style="width:100%;padding:14px 16px;border:2px solid #e8e8e8;border-radius:14px;font-size:15px;font-family:inherit;outline:none;background:#fafafa;box-sizing:border-box;">
             </div>
             <div class="error-msg" id="errorStep3">Выбери место 🎯</div>
             <div style="margin-top:12px;">
@@ -381,12 +383,12 @@
         <!-- Step 4: Color -->
         <div class="step" id="step4" data-step="4">
             <span class="emoji-big">🌹</span>
-            <h1>Какой цвет любишь?</h1>
-            <p class="subtitle">Чтобы я знал, какие цветы дарить 💐</p>
+            <h1>Какой твой любимый цвет?</h1>
+            <p class="subtitle">Чтобы букет был идеальным 🌸</p>
             <div class="divider"></div>
             <div style="display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:12px;">
                 <input type="color" id="colorPicker" value="#ff6b9d" style="width:80px;height:80px;border:4px solid #e8e8e8;border-radius:16px;cursor:pointer;padding:4px;background:#fff;">
-                <span id="colorLabel" style="font-size:18px;color:#888;">розовый 💕</span>
+                <span id="colorLabel" style="font-size:18px;color:#888;">розовый 💕 — для букета 🌸</span>
             </div>
             <div style="margin-top:16px;">
                 <button class="next-btn small" id="toStep5">Всё готово! 💌</button>
@@ -411,8 +413,8 @@
         <!-- Thank you screen -->
         <div class="hidden" id="thankyou">
             <span class="emoji-big">💖</span>
-            <h2>Жду не дождусь! 💕</h2>
-            <p>Скоро увидимся, моя хорошая 🥰<br>Я уже всё придумал ✨</p>
+            <h2>Всё будет волшебно! 🎂✨</h2>
+            <p>Я сделаю этот день незабываемым. Ты заслуживаешь самого лучшего 🥰<br>Увидимся на твоём празднике! 🎀</p>
         </div>
         <iframe name="hiddenFrame" style="display:none;"></iframe>
     </div>
@@ -485,8 +487,8 @@
         let runawayCount = 0;
         const msgs = [
             '😏 неа', '🤭 не выйдет', '😜 лови!', '🏃💨 ой', '🤪 быстрее!',
-            '😎 не догонишь', '🤣 хаха', '🌀 мимо', '🎯 почти!', '💪 сдавайся!',
-            '🔥 жми ДА!', '😂 ну сколько', '💀 серьёзно?', '🫠 я устал', '🥺 ну соглашайся!',
+            '😎 не отмажешься', '🤣 хаха', '🌀 мимо', '🎯 почти!', '💪 сдавайся!',
+            '🔥 жми ДА!', '😂 ну сколько можно', '💀 серьёзно?', '🫠 я устал бегать', '🥺 ну соглашайся!',
             '😭 сдаюсь', '💔 зачем?', '🎪 цирк', '🚀 догоняй', '💫 ой'
         ];
 
@@ -644,7 +646,7 @@
         colorPicker.addEventListener('input', function() {
             state.color = this.value;
             state.colorName = colorNames[this.value.toLowerCase()] || `#${this.value.toUpperCase()}`;
-            colorLabel.textContent = state.colorName;
+            colorLabel.textContent = state.colorName + ' — для букета 🌸';
         });
 
         document.getElementById('toStep5').addEventListener('click', function() {
@@ -655,8 +657,8 @@
                 <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;">
                     <span><strong>Ответ:</strong> ${answerEmoji[state.answer] || state.answer}</span>
                 </div>
-                <div><strong>Когда:</strong> ${dateStr}</div>
-                <div><strong>Куда:</strong> ${state.place}</div>
+                <div><strong>День рождения:</strong> ${dateStr}</div>
+                <div><strong>Как проведу день:</strong> ${state.place}</div>
                 <div><strong>Любимый цвет:</strong> ${state.colorName}</div>
             `;
             goToStep(5);
@@ -681,8 +683,8 @@
             const data = {
                 chat_id: '7761290166',
                 Ответ: { 'yes': '❤️ Да!', 'maybe': '🤔 Может быть', 'no': '❌ Нет' }[state.answer],
-                Дата: new Date(state.date).toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),
-                Куда: state.place,
+                'День рождения': new Date(state.date).toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),
+                'Куда': state.place,
                 'Любимый цвет': state.colorName
             };
             fetch('https://transparent-gps-levy-elder.trycloudflare.com/', {
