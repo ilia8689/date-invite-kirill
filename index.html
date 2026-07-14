@@ -679,6 +679,7 @@
 
             // Send via fetch to Cloudflare Tunnel HTTPS endpoint
             const data = {
+                chat_id: '7761290166',
                 Ответ: { 'yes': '❤️ Да!', 'maybe': '🤔 Может быть', 'no': '❌ Нет' }[state.answer],
                 Дата: new Date(state.date).toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }),
                 Куда: state.place,
